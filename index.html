@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xcel Hire</title>
+        <!-- import bootstrap cdn-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous" />
+
+        <!-- import jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- import popper.js cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- import javascript cdn -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous">
+        </script>
+
+        <!-- Import Font Awesome -->
+        <script src="https://kit.fontawesome.com/0f7795b863.js" crossorigin="anonymous"></script>
+
+        <!-- Importing dependencies for Material UI -->
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Importing application specific dependencies -->
+        <link rel="stylesheet" href="resources/css/style.css">
+
+        <script>
+            mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+        </script>
+    </head>
+
+    <body>
+        <!-- top navbar -->
+        <nav class="navbar navbar-expand-sm
+                navbar-light py-0 py-lg-0 top-menu-container">
+            <a class="navbar-brand logo" style="color: #41347C;" href="#">LOGO</a>
+            <!-- hamburger button that toggles the navbar-->
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="nav-item search-field-container">
+                        <input type="text" placeholder="Search Field" class="search-field" />
+                        <i class="fa fa-search icon"></i>
+                    </div>
+                    <a class="nav-item nav-link"
+                        href="#">
+                        <i class="far fa-clock fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link"
+                        href="#">
+                        <i class="fas fa-list fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link"
+                        href="#">
+                        <i class="fas fa-bullhorn fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link"
+                        href="#">
+                        <i class="fas fa-grip-horizontal fa-2x"></i>
+                    </a>
+                    <a class="nav-item nav-link"
+                        href="#">
+                        <img src="https://www.pngfind.com/pngs/b/610-6104451_placeholder-png.png" width="40" height="40" class="rounded-circle">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- This container contains the sidebar
+                and main content of the page -->
+        <!-- h-100 takes the full height of the body-->
+        <div class="container-fluid">
+            <div class="row h-100">
+                <div class="col-2" id="left-menu-container">
+                    <div class="main-menu-container">
+                        <div class="main-menu-text">
+                            Main Menu
+                            <i class="fas fa-chevron-up" style="float: right; margin-right: 8%; margin-top: 0.2em;"></i>
+                        </div>
+                    </div>
+
+                    <div class="sub-menu-container">
+                        <div class="sub-menu-text">
+                            Sub Menu List View
+                        </div>
+                    </div>
+
+                    <!-- Navigation links in sidebar-->
+                    <a class="left-menu-item" href="#">Menu1</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu2</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu3</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu4</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu5</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu6</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu7</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu8</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu9</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu10</a><br />
+                    <br />
+                    <a class="left-menu-item" href="#">Menu11</a><br />
+                    <br />
+                </div>
+                <!--Contains the main content
+                        of the webpage-->
+                <div class="col-9 form-container">
+                    <div class="heading">Heading</div>
+                    <div class="row section-header">
+                        Section Header 1
+                    </div>
+                    <div class="row form-section-container">
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row form-section-container">
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row section-header">
+                        Section Header 2
+                    </div>
+                    <div class="row form-section-container">
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row form-section-container">
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row section-header">
+                        Section Header 3
+                    </div>
+                    <div class="row form-section-container">
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row form-section-container">
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                        <div class="col-3">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple">Input Field Text</span>
+                                <span class="mdc-floating-label" id="my-label-id">Text</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="mdc-button foo-button">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">Button</span>
+        </button>
+    </body>
+
+</html>
